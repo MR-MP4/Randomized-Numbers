@@ -1,94 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Charity: Water — Game Name</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <main class="game-shell">
-    <section class="game-screen" aria-label="Game screen">
-      <header class="top-bar">
-        <div class="resource resource-budget">Budget <strong id="budget-value">$100</strong></div>
-        <div class="top-nav">
-          <button type="button" class="nav-button" data-scroll="builds">Builds</button>
-          <button type="button" class="nav-button" data-scroll="sanitation">Sanitation</button>
-          <button type="button" class="nav-button" data-scroll="agriculture">Agriculture</button>
-          <button type="button" class="nav-button" data-scroll="education">Education</button>
-        </div>
-        <div class="resource resource-day">Day <strong id="day-value">1</strong></div>
-      </header>
-
-      <section class="world" aria-label="Game map">
-        <div class="sky"></div>
-        <div class="ground"></div>
-        <div class="background-placeholder">Background image here</div>
-        <div class="water-pump-art" aria-hidden="true">
-          <div class="pump-roof"></div><div class="pump-post post-left"></div>
-          <div class="pump-post post-right"></div><div class="pump-base"></div>
-        </div>
-        <div class="sanitation-art" aria-hidden="true">
-          <div class="station-roof"></div><div class="station-body"></div>
-        </div>
-        <div class="worker-placeholder">Worker image here</div>
-        <div class="charity-placeholder">Charity: Water image here</div>
-        <div class="map-caption">Background of game map</div>
-      </section>
-
-      <section class="bottom-panel">
-        <div class="category-panel">
-          <h2>Builds and Facilities</h2>
-          <p>Build infrastructure to improve access to clean water and sanitation.</p>
-          <div class="action-grid">
-            <button type="button" class="action-button" id="build-pump">
-              <span class="action-icon">＋</span>
-              <span><strong>Water Pump</strong><small>Cost: $40 · +Sanitation · +Agriculture</small></span>
-            </button>
-            <button type="button" class="action-button" id="build-sanitation">
-              <span class="action-icon">＋</span>
-              <span><strong>Sanitation Station</strong><small>Cost: $30 · +Sanitation</small></span>
-            </button>
-          </div>
-        </div>
-        <div class="category-panel">
-          <h2>Advertise and Educate</h2>
-          <p>Raise awareness and help the community learn.</p>
-          <div class="action-grid">
-            <button type="button" class="action-button" id="advertise">
-              <span class="action-icon">↗</span>
-              <span><strong>Advertise</strong><small>Cost: $15 · +Budget</small></span>
-            </button>
-            <button type="button" class="action-button" id="educate">
-              <span class="action-icon">＋</span>
-              <span><strong>Educate</strong><small>Cost: $20 · +Education</small></span>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <footer class="status-bar" aria-live="polite">
-        <span id="status-message">Welcome! Choose an action to get started.</span>
-        <button type="button" id="next-day">Next Day →</button>
-      </footer>
-    </section>
-
-    <aside class="sidebar">
-      <div class="brand-placeholder">Charity: Water<br><small>Image here</small></div>
-      <h1>Game Name</h1>
-      <p class="subtitle">Charity: Water credentials</p>
-      <div class="stats">
-        <div><span>Sanitation</span><strong id="sanitation-value">0</strong></div>
-        <div><span>Agriculture</span><strong id="agriculture-value">0</strong></div>
-        <div><span>Education</span><strong id="education-value">0</strong></div>
-      </div>
-      <div class="worker-card">
-        <div class="worker-card-placeholder">Worker image here</div>
-        <p>MC / Worker from Charity: Water</p>
-      </div>
-      <div class="version">Version 1.0</div>
-    </aside>
-  </main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charity: Water — Community Water &amp; Sanitation Simulator</title>
+    <meta name="description" content="Interactive resource management simulation where players build water pumps and sanitation stations, run education and fundraising campaigns, and track community health and agriculture impact." />
+    <meta property="og:title" content="Charity: Water — Community Water &amp; Sanitation Simulator" />
+    <meta property="og:description" content="Interactive resource management simulation where players build water pumps and sanitation stations, run education and fundraising campaigns, and track community health and agriculture impact." />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

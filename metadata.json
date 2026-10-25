@@ -1,0 +1,6 @@
+{
+  "name": "Charity: Water — Community Water & Sanitation Simulator",
+  "description": "Interactive resource management simulation where players build water pumps and sanitation stations, run education and fundraising campaigns, and track community health and agriculture impact.",
+  "permissions": [],
+  "capabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
